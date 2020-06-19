@@ -9,5 +9,14 @@
 </head>
 <body>
     JS-Plugin
+    <input id="urlIp" type="text" placeholder="Enter URL"/>
+    <button onclick="myFunction()">Submit</button>
+    <div id="showD"></div>
+    <script>
+        function myFunction() {
+            var url=document.getElementById("urlIp").value;
+            document.getElementById("showD").innerHTML = `&lt;script src='https://gkanishk.github.io/js-plugin/embed.js' id="emb" data="${url}"&gt;&lt;/script&gt;`;
+        }
+        </script>
 </body>
 </html>
