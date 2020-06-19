@@ -1,7 +1,7 @@
 var script = document.getElementById('emb')
 var data= script.getAttribute("data");
 console.log(data+" hui");
-document.head.insertAdjacentHTML( 'beforeend', '<link rel=stylesheet href="../css/ext.css">' );
+document.head.insertAdjacentHTML( 'beforeend', '<link rel=stylesheet href="https://gkanishk.github.io/js-plugin/css/ext.css">' );
 document.write(`
 <div class="card">
 <div id="dimg"><img src="${data}/favicon.ico" id="uimg"/></div>
