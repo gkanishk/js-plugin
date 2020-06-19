@@ -1,4 +1,4 @@
-document.head.insertAdjacentHTML('beforeend','<link rel=stylesheet href="./css/ext.css">');
+document.head.insertAdjacentHTML('beforeend','<link rel=stylesheet href="https://raw.githubusercontent.com/gkanishk/js-plugin/master/css/ext.css">');
 var script = document.getElementById('emb')
 var data= script.getAttribute("data");
 console.log(data+" hui");
