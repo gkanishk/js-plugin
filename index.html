@@ -1,36 +1,26 @@
 <!DOCTYPE html>
 <html>
-<head style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+<head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Embeded Js</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="./css/style.css" rel="stylesheet">
 </head>
-<body style="background-color: #78CBEC;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
-    <div style="text-align: center;">
-    <div style="background-color:#EFF3FE; border-radius: 25px; width: 80%; height: 500px; opacity: 80%;margin-left: 120px; margin-top: 50px;padding: 30px;">
-    <h1 style="position: inherit; text-align: center; margin-top: 10px;color: #061058;">JS Plugin Generator</h1>
-    <div style="margin: initial; text-align: center;">
-        <div style="display:flex;justify-content: center;"><script src='https://gkanishk.github.io/jsplugin/script.js' id="emb" data="https://google.com"></script></div>
+<body>
+    <div class="mDiv">
+    <div class="cDiv">
+    <h1>JS Plugin Generator</h1>
+    <div class="dataDiv">
+        <div class="scripDiv"><script src='https://gkanishk.github.io/jsplugin/script.js' id="emb" data="https://google.com"></script></div>
         <h4>Enter URL to generate the embeded script</h4>
-        <input type="text" placeholder="Enter URL" id="url" style="border: 2px solid #FFB7CF;border-radius: 4px;"/>
-        <button onclick="show()"
-        style=" background-color: #FFB7CF;
-                border: none;
-                color: #3021B5;
-                padding: 5px 20px;
-                text-align: center;
-                text-decoration: none;
-                display: inline-block;
-                font-weight: bold;
-                font-size: 14px;
-                margin: 4px 2px;
-                cursor: pointer;">
+        <input type="text" placeholder="Enter URL" id="url" class="ipt"/>
+        <button onclick="show()" class="btn">
                 Show
             </button>
-        <div style=" background-color: #3D30F1;color: white;font-weight: 700; width: 80%; height:100px;border-radius: 25px;padding: 20px;margin-top: 20px;text-align: center;margin-left: 90px;">
-            <p>Please copy the script below.</p>
-            <div id="showdata" style="margin: inherit;"></div>
+        <div class="rDiv">
+            <p>Please copy the script generated below:</p>
+            <div id="showdata"></div>
         </div>
     </div>
     </div>
