@@ -5,9 +5,23 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Embeded Js</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <script src='https://gkanishk.github.io/jsplugin/script.js' id="emb" data="https://google.com"></script>
 </head>
-<body>
-    JS
+<body style="background-color: blanchedalmond;">
+    <h1 style="position: inherit; text-align: center;">JS Plugin Generator</h1>
+    <div style="margin: inherit; text-align: center;">
+        <div style="display:flex;align-items: center;
+        justify-content: center;"><script src='https://gkanishk.github.io/jsplugin/script.js' id="emb" data="https://google.com"></script></div>
+        <h4>Enter URL to generate the embeded script</h4>
+        <input type="text" placeholder="Enter URL" id="url"/>
+        <button onclick="show()">Show</button>
+        <div id="showdata" style="margin: inherit;"></div>
+        <script>
+            function show()
+            {
+                var url=document.getElementById("url").value;
+                document.getElementById("showdata").innerHTML=`&ltscript src='https://gkanishk.github.io/jsplugin/script.js' id="emb" data="${url}"&gt;&lt;/script&gt;`;
+            }
+        </script>
+    </div>
 </body>
 </html>
