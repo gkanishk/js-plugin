@@ -6,11 +6,12 @@
     <title>Embeded Js</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
 </head>
-<body style="background-color: blanchedalmond;">
-    <h1 style="position: inherit; text-align: center;">JS Plugin Generator</h1>
-    <div style="margin: inherit; text-align: center;">
-        <div style="display:flex;align-items: center;
-        justify-content: center;"><script src='https://gkanishk.github.io/jsplugin/script.js' id="emb" data="https://google.com"></script></div>
+<body style="background-color: #78CBEC;">
+    <div style="text-align: center;">
+    <div style="background-color:#EFF3FE; border-radius: 25px; width: 80%; height: 500px; opacity: 80%;margin-left: 120px;">
+        <h1 style="position: inherit; text-align: center;">JS Plugin Generator</h1>
+    <div style="margin: initial; text-align: center;">
+        <div style="display:flex;justify-content: center;"><script src='https://gkanishk.github.io/jsplugin/script.js' id="emb" data="https://google.com"></script></div>
         <h4>Enter URL to generate the embeded script</h4>
         <input type="text" placeholder="Enter URL" id="url" style="border: 2px solid red;border-radius: 4px;"/>
         <button onclick="show()"
@@ -27,11 +28,14 @@
                 Show
             </button>
         <div id="showdata" style="margin: inherit;"></div>
+    </div>
+    </div>
         <script>
             function show()
             {
                 var url=document.getElementById("url").value;
                 document.getElementById("showdata").innerHTML=`&ltscript src='https://gkanishk.github.io/jsplugin/script.js' id="emb" data="${url}"&gt;&lt;/script&gt;`;
+                var exData=document.getElementById("showdatas");  
             }
         </script>
     </div>
