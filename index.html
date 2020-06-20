@@ -12,8 +12,20 @@
         <div style="display:flex;align-items: center;
         justify-content: center;"><script src='https://gkanishk.github.io/jsplugin/script.js' id="emb" data="https://google.com"></script></div>
         <h4>Enter URL to generate the embeded script</h4>
-        <input type="text" placeholder="Enter URL" id="url"/>
-        <button onclick="show()">Show</button>
+        <input type="text" placeholder="Enter URL" id="url" style="border: 2px solid red;border-radius: 4px;"/>
+        <button onclick="show()"
+        style=" background-color: red;
+                border: none;
+                color: white;
+                padding: 5px 20px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 14px;
+                margin: 4px 2px;
+                cursor: pointer;">
+                Show
+            </button>
         <div id="showdata" style="margin: inherit;"></div>
         <script>
             function show()
