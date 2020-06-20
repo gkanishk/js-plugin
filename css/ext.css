@@ -46,9 +46,3 @@ align-items: center;
     color:#0000ff;
     background-color:#FFFFFF;
     }
-@media all and (max-width:30em){
-     a.button1{
-    display:block;
-    margin:0.4em auto;
-     }
-    }
