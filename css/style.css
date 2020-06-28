@@ -1,62 +1,137 @@
-body,head{
-    background-color: #78CBEC;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+@media only screen and (min-width:1300px)
+{
+    body,head{
+        background-color: #78CBEC;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    h1{
+        position: inherit; 
+        text-align: center; 
+        margin-top: 10px;
+        color: #061058;
+    }
+    .mDiv{
+        text-align: center;
+    }
+    .cDiv{
+        background-color:#EFF3FE; 
+        border-radius: 25px; 
+        width: 80%; 
+        height: 500px; 
+        opacity: 80%;
+        margin-left: 120px; 
+        margin-top: 50px;
+        padding: 30px;
+    }
+    .btn{
+                    background-color: #FFB7CF;
+                    border: none;
+                    color: #3021B5;
+                    padding: 5px 20px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-weight: bold;
+                    font-size: 14px;
+                    margin: 4px 2px;
+                    cursor: pointer;
+    }
+    .dataDiv{
+        margin: initial; 
+        text-align: center;
+    }
+    .rDiv{
+        background-color: #3D30F1;
+        color: white;
+        font-weight: 700; 
+        width: 80%; 
+        height:100px;
+        border-radius: 25px;
+        padding: 20px;
+        margin-top: 20px;
+        text-align: center;
+        margin-left: 90px;
+    }
+    .ipt{
+        border: 2px solid #FFB7CF;
+        border-radius: 4px;
+    }
+    #showdata{
+        margin: inherit;
+    }
+    .scripDiv{
+        display:flex;
+        justify-content: center;
+    }
 }
-h1{
-    position: inherit; 
-    text-align: center; 
-    margin-top: 10px;
-    color: #061058;
-}
-.mDiv{
-    text-align: center;
-}
-.cDiv{
-    background-color:#EFF3FE; 
-    border-radius: 25px; 
-    width: 80%; 
-    height: 500px; 
-    opacity: 80%;
-    margin-left: 120px; 
-    margin-top: 50px;
-    padding: 30px;
-}
-.btn{
-                background-color: #FFB7CF;
-                border: none;
-                color: #3021B5;
-                padding: 5px 20px;
-                text-align: center;
-                text-decoration: none;
-                display: inline-block;
-                font-weight: bold;
-                font-size: 14px;
-                margin: 4px 2px;
-                cursor: pointer;
-}
-.dataDiv{
-    margin: initial; 
-    text-align: center;
-}
-.rDiv{
-    background-color: #3D30F1;
-    color: white;
-    font-weight: 700; 
-    width: 80%; 
-    height:100px;
-    border-radius: 25px;
-    padding: 20px;
-    margin-top: 20px;
-    text-align: center;
-    margin-left: 90px;
-}
-.ipt{
-    border: 2px solid #FFB7CF;
-    border-radius: 4px;
-}
-#showdata{
-    margin: inherit;
-}
-.scripDiv{
-    display:flex;
-    justify-content: center;
+@media only screen and (max-width: 800px) {
+    body,head{
+        background-color: #78CBEC;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        width: min-content;
+        text-align: center;
+    }
+    h1{
+        position: inherit; 
+        text-align: center; 
+        margin-top: 10px;
+        color: #061058;
+    }
+    .mDiv{
+        text-align: center;
+        margin-left: 5vw;
+        width: 100%;
+    }
+    .cDiv{
+        background-color:#EFF3FE; 
+        border-radius: 25px; 
+        width: 80%; 
+        /* height: 500px;  */
+        opacity: 80%;
+        text-align: center;
+        padding: 30px;
+        font-size: small;
+        margin-top: 10vw;
+    }
+    .btn{
+                    background-color: #FFB7CF;
+                    border: none;
+                    color: #3021B5;
+                    padding: 5px 20px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-weight: bold;
+                    font-size: 14px;
+                    margin: 4px 2px;
+                    cursor: pointer;
+    }
+    .dataDiv{
+        margin: initial; 
+        text-align: center;
+    }
+    .rDiv{
+        background-color: #3D30F1;
+        color: white;
+        font-weight: 700; 
+        width: 65vw; 
+        border-radius: 25px;
+        padding: 2vw;
+        /* margin-top: 20px; */
+        text-align: center;
+        /* margin-left: 2vw; */
+    }
+    .ipt{
+        border: 2px solid #FFB7CF;
+        border-radius: 4px;
+    }
+    #showdata{
+        /* margin: inherit; */
+        font-size: small;
+        height: auto;
+        word-wrap: break-word;
+    }
+    .scripDiv{
+        display:flex;
+        justify-content: center;
+    }
 }
